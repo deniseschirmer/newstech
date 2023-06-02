@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@500&family=Inter:wght@100;200;300;400;500;600&family=Poppins:wght@300;500;600;700&display=swap");
 
 .header {
-  background: #29104d;
+  background: linear-gradient(
+    90deg,
+    rgba(52, 17, 83, 1) 0%,
+    rgba(1, 12, 51, 1) 100%
+  );
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,9 +20,32 @@
   font-weight: 500;
 }
 
+.navbar {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .navbar a {
   font-family: var(--primaryFont);
   color: #fff;
   text-decoration: none;
   margin-left: 35px;
+}
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 24px;
+    line-height: 27.6px;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
