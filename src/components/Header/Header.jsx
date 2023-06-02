@@ -1,6 +1,6 @@
 import Navbar from "../NavBar/Navbar";
 import "./header.css";
-import hero from "../../assets/hero.jpg";
+import hero from "../../assets/hero.png";
 
 function Header() {
   return (
