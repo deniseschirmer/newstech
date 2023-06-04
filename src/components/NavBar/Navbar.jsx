@@ -14,10 +14,10 @@ export default function Navbar() {
       <header className="header">
         <h3 className="title">NEWSTECH</h3>
         <nav ref={navRef} className="navbar">
-          <a href="/#">HOME</a>
-          <a href="/#">SOBRE</a>
+          <a href="/#">Sobre</a>
           <a href="/#">Projetos</a>
-          <a href="/#">CONTATO</a>
+          <a href="/#">Junte-se a nós</a>
+          <a href="/#">Contato</a>
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             <FaTimes />
           </button>
@@ -36,7 +36,6 @@ export default function Navbar() {
             <button>Contato</button>
           </a>
         </nav>
-        <Hamburger toggled={isOpen} toggle={setOpen} />
       </header> */}
     </>
   );
