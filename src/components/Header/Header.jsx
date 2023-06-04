@@ -7,11 +7,11 @@ export default function Header() {
     <div>
       <Navbar />
       <section className="section">
-        <h3> Olá empreendedor</h3>
-        <h1>Vamos expandir o seu negócio?</h1>
-        <h2>Torne ele online!</h2>
-        <button>COMECE AGORA</button>
-        <img src={hero} />
+        <h3 className="title"> Olá empreendedor</h3>
+        <h1 className="main-title">Vamos expandir o seu negócio?</h1>
+        <h2 className="sub-title">Torne ele online!</h2>
+        <button className="b">COMECE AGORA</button>
+        <img className="menbox" src={hero} alt="Homem em uma caixa" />
       </section>
     </div>
   );
