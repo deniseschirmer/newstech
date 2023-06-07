@@ -14,7 +14,7 @@ export default function Navbar() {
       <header className="header">
         <h3 className="title">NEWSTECH</h3>
         <nav ref={navRef} className="navbar">
-          <a href="/#">Sobre</a>
+          <a href="/">Sobre</a>
           <a href="/#">Projetos</a>
           <a href="/join">Junte-se a nós</a>
           <a href="/#">Contato</a>

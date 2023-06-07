@@ -20,7 +20,7 @@ export const Sobre = () => {
           para entregar uma experiência online excepcional para seus clientes.
         </p>
       </div>
-      <img src={menbox} />
+      <img src={menbox} alt="Homem em uma caixa" />
     </section>
   );
 };
