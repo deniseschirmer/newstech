@@ -3,7 +3,7 @@ import React, { Suspense } from "react";
 
 const AppRoutes = () => {
   const Home = React.lazy(() => import("../pages/home"));
-  const Join = React.lazy(() => import("../pages/join"));
+  const Join = React.lazy(() => import("../pages/join/join"));
   return (
     <BrowserRouter>
       <Routes>
