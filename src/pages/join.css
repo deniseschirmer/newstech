@@ -1,0 +1,58 @@
+.Join-container {
+  display: flex;
+  width: 1439px;
+  height: 848px;
+}
+
+.Join-box {
+  width: 603px;
+  height: 364px;
+}
+
+.Join-title {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #01030f;
+}
+
+.Join-paragraph {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #01030f;
+}
+
+.Join-responsive-image {
+  width: 486.56px;
+  height: 364.92px;
+  /* background: url(CoffeeDoddle(1).png); */
+  transform: rotate(0.75deg);
+}
+
+.Join-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 35px;
+  gap: 10px;
+  width: 281px;
+  height: 68px;
+  background: #ffa800;
+  border-radius: 16px;
+}
+
+.Join-btn p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #01030f;
+}

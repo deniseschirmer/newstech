@@ -1,0 +1,21 @@
+.footer-container {
+  width: 1440px;
+  height: 60px;
+  padding: 0 100px;
+  left: 0px;
+  top: 4366px;
+  background: #29104d;
+}
+
+.footer-logo {
+  width: 112px;
+  height: 21px;
+  top: 4387px;
+  font-family: var(--secondFont);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 132.52%;
+  color: #f2f2f2;
+  opacity: 0.7;
+}
