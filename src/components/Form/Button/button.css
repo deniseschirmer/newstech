@@ -1,0 +1,12 @@
+.button {
+    width: 500px;
+    height: 68px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--secondFont);
+    border: none;
+    cursor: pointer;
+    background: var(--yellowColor);
+    color: var(--mainColorDark);
+}

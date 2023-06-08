@@ -18,10 +18,11 @@
   line-height: 47px;
   font-style: normal;
   color: #01030f;
+  margin-bottom: 20px;
 }
-.sobre-paragrafo-1 {
-  margin-top: 39px;
-  font-family: (var(--secondFont));
+.sobre-paragrafo {
+  margin-bottom: 39px;
+  font-family: var(--secondFont);
   font-style: normal;
   font-weight: 400px;
   font-size: 20px;

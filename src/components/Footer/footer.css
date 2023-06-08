@@ -4,7 +4,7 @@
   padding: 0 100px;
   left: 0px;
   top: 4366px;
-  background: #29104d;
+  background: var(--secondaryColor);
 }
 
 .footer-logo {
