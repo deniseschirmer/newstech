@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --primaryFont: "Asap Condensed", sans-serif;
   --secondFont: "Roboto ", sans-serif;
