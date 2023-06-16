@@ -21,7 +21,11 @@ export const Sobre = () => {
         </p>
       </div>
       <div className="sobre-box_imagem">
-        <img src={menbox} alt="Homem em uma caixa" />
+        <img
+          className="responsive-image"
+          src={menbox}
+          alt="Homem em uma caixa"
+        />
       </div>
     </section>
   );

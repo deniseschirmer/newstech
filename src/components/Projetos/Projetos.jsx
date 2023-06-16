@@ -5,7 +5,7 @@ const Projetos = () => {
   return (
     <section className="projeto-container">
       <h1 className="projeto-title">Projetos</h1>
-      <p className="projeto-paragrafo">
+      <p className="projeto-paragrafo__p">
         Descubra como nosso projetos digitais podem ajudá-lo a alcançar seus
         objetivo de negócios online.
       </p>
@@ -18,8 +18,8 @@ const Projetos = () => {
               src={card}
               alt="Imagem do computador"
             />
-            <h2>Nome do Site / Projeto</h2>
-            <p>Visite a página</p>
+            <h2 className="projeto-card_title">Nome do Site / Projeto</h2>
+            <p className="projeto-card_paragrafo">Visite a página</p>
           </div>
         </div>
         <div className="projeto-col">
