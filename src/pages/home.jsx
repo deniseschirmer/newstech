@@ -1,7 +1,8 @@
 import Hero from "../components/Hero/Hero";
+import Projetoss from "../components/Projetoss/Projetoss";
 import { Sobre } from "../components/Sobre/Sobre";
 // import Footer from "../components/Footer/Footer";
-import Projetos from "../components/Projetos/Projetos";
+//import Projetos from "../components/Projetos/Projetos";
 // import Contact from "../components/Contact";
 
 const Home = () => {
@@ -9,7 +10,8 @@ const Home = () => {
     <>
       <Hero />
       <Sobre />
-      <Projetos />
+      <Projetoss />
+      {/* <Projetos /> */}
       {/* <Contact /> */}
       {/* <Footer /> */}
     </>
