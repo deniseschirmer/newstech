@@ -1,7 +1,7 @@
 .contact-container {
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 10px 100px;
   margin-top: 90px;
@@ -41,7 +41,7 @@
 }
 
 .contact-box__image {
-  width: 576px;
+  width: 575px;
   height: 460px;
 }
 .contact-box__text {
