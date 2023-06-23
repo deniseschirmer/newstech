@@ -1,7 +1,7 @@
 .contact-container {
-  /* width: 100vw; */
+  /* width: 100%; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 100px;
   margin-top: 90px;
@@ -50,5 +50,5 @@
   line-height: 48px;
   font-weight: 400;
   color: #01030f;
-  width: 564px;
+  width: 533px;
 }
