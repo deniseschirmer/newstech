@@ -7,7 +7,7 @@ const Join = () => {
   return (
     <div>
       <Navbar />
-      <section className="Join-container">
+      <section id="join" className="Join-container">
         <div className="Join-box">
           <h1 className="Join-title">Junte-se a nós</h1>
           <p className="Join-paragraph">

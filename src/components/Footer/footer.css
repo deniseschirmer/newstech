@@ -1,9 +1,8 @@
 .footer-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* width: 100%; */
+  width: 100%;
   height: 60px;
   padding: 0 100px;
   margin-top: 60px;
@@ -21,29 +20,9 @@
   color: #f2f2f2;
 }
 
-.icone-Email {
+.icone {
   width: 35px;
   height: 28.667px;
   color: #f2f2f2;
   margin-right: 14px;
-}
-
-.icone-Whastapp {
-  width: 35px;
-  height: 28.667px;
-  color: #f2f2f2;
-  margin-right: 14px;
-}
-
-.icone-Linkedin {
-  width: 35px;
-  height: 28.667px;
-  color: #f2f2f2;
-  margin-right: 14px;
-}
-
-.icone-Github {
-  width: 35px;
-  height: 28.667px;
-  color: #f2f2f2;
 }
