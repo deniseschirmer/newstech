@@ -18,6 +18,7 @@ header {
   font-family: var(--primaryFont);
   line-height: 45.84px;
   font-weight: 500;
+  text-decoration: none;
 }
 
 .navbar {

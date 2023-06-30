@@ -2,6 +2,7 @@ import { useRef } from "react";
 import "./navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const navRef = useRef();
@@ -13,7 +14,10 @@ export default function Navbar() {
   return (
     <>
       <header className="header">
-        <h3 className="title">NEWSTECH</h3>
+        <NavLink className="title" to="/" activeClassName="is-active" exact>
+          NEWSTECH
+        </NavLink>
+        {/* <h3 className="title">NEWSTECH</h3> */}
         <nav ref={navRef} className="navbar">
           {/* <Link
             to="contact"
@@ -42,7 +46,7 @@ export default function Navbar() {
 
           <a href="/join">Junte-se a nós</a>
 
-          <Link
+          {/* <Link
             to="contact"
             spy={true}
             smooth={true}
@@ -50,9 +54,9 @@ export default function Navbar() {
             duration={500}
           >
             Contato
-          </Link>
+          </Link> */}
 
-          {/* <a href="/#">Contato</a> */}
+          <a href="/#">Contato</a>
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             <FaTimes />
           </button>
