@@ -1,11 +1,44 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import "./navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-scroll";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
 
 export default function Navbar() {
   const navRef = useRef();
+
+  useEffect(() => {
+    const url = window.location.href;
+
+    if (url.includes("/#sobre")) {
+      const element = document.getElementById("sobre");
+
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    if (url.includes("/#projetos")) {
+      const element = document.getElementById("projetos");
+
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    if (url.includes("/#contact")) {
+      const element = document.getElementById("contact");
+
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, []);
+
+  const handleNavigation = (url) => {
+    const element = document.getElementById(url);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
@@ -17,46 +50,20 @@ export default function Navbar() {
         <NavLink className="title" to="/" activeClassName="is-active" exact>
           NEWSTECH
         </NavLink>
-        {/* <h3 className="title">NEWSTECH</h3> */}
         <nav ref={navRef} className="navbar">
-          {/* <Link
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-          >
-            <FaEnvelope className="icone" />
-          </Link>
-          <Link to="/" spy={true} smooth={true} offset={50} duration={500}>
-            Sobre
-          </Link> */}
-          <Link to="Sobre" spy={true} smooth={true} offset={50} duration={500}>
+          <Link to="/#sobre" onClick={() => handleNavigation("sobre")}>
             Sobre
           </Link>
-          <Link
-            to="Projetos"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-          >
+          <Link to="/#projetos" onClick={() => handleNavigation("projetos")}>
             Projetos
           </Link>
 
-          <a href="/join">Junte-se a nós</a>
+          <Link to="/join">Junte-se a nós</Link>
 
-          {/* <Link
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-          >
+          <Link to="/#contact" onClick={() => handleNavigation("contact")}>
             Contato
-          </Link> */}
+          </Link>
 
-          <a href="/#">Contato</a>
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             <FaTimes />
           </button>

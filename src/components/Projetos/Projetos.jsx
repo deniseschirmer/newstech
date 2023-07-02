@@ -3,7 +3,7 @@ import "./projetos.css";
 
 const Projetos = () => {
   return (
-    <section id="Projetos" className="projeto-section">
+    <section id="projetos" className="projeto-section">
       <h1 className="projeto-title">Projetos</h1>
       <p className="projeto-paragrafo">
         Descubra como nosso projetos digitais podem ajudá-lo a alcançar seus

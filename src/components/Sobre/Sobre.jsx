@@ -3,7 +3,7 @@ import "./sobre.css";
 
 export const Sobre = () => {
   return (
-    <section id="Sobre" className="sobre-container">
+    <section id="sobre" className="sobre-container">
       <div className="sobre-box">
         <h1 className="sobre-title">Sobre</h1>
         <p className="sobre-paragrafo">
