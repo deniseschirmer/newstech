@@ -5,16 +5,39 @@ import Select from "../Form/select";
 import TextArea from "../Form/TextArea";
 import Button from "../Form/Button";
 import boy from "../../assets/boy.png";
+import { Controller, useForm, useFormState } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+
+const schema = yup.object().shape({
+  nome: yup.string().required("nome é obrigatório"),
+  email: yup.string().email("Email inválido").required("Email obrigátorio"),
+  telefone: yup
+    .string()
+    .matches(/^\d+$/, "Telefone inválido")
+    .min(10, "Telefone deve ter no mínimo 10 dígitos")
+    .max(15, "Telefone deve ter no máximo 15 dígitos"),
+  serviços: yup.string().required("Serviço é obrigatório"),
+  mensagem: yup.string().required("Mensagem é obrigatório"),
+});
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [services, setServices] = useState("");
-  const [message, setMessage] = useState("");
+  const defaultValues = {
+    nome: null,
+    email: null,
+    telefone: null,
+    serviços: null,
+    mensagem: null,
+  };
+  const { handleSubmit, reset, control } = useForm({
+    resolver: yupResolver(schema),
+    defaultValues: defaultValues,
+  });
 
-  const handleSubmit = () => {
-    window.alert("Email enviado com sucesso!");
+  const { errors } = useFormState({ control });
+
+  const sendEmail = (data) => {
+    console.log(data);
   };
 
   const serviceOptions = [
@@ -49,20 +72,42 @@ const Contact = () => {
           <br />
           mensagem sobre o que você precisa para impulsionar o seu negócio.
         </p>
-        <div className="form">
-          <Input title="Nome" setState={setName} value={name} />
-          <Input title="Email" setState={setEmail} value={email} />
-          <Input title="Telefone" setState={setPhone} value={phone} />
-          <Select
-            title="Serviços"
-            options={serviceOptions}
-            value={services}
-            setState={setServices}
+        <form className="form" onSubmit={handleSubmit(sendEmail)}>
+          <Controller
+            control={control}
+            name="nome"
+            render={({ field }) => <Input title="Nome" {...field} />}
           />
-          <TextArea value={message} setState={setMessage} />
+          {errors.nome && <span>{errors.nome.message}</span>}
+          <Controller
+            control={control}
+            name="email"
+            render={({ field }) => <Input title="Email" {...field} />}
+          />
+          {errors.email && <span>{errors.email.message}</span>}
+          <Controller
+            control={control}
+            name="telefone"
+            render={({ field }) => <Input title="Telefone" {...field} />}
+          />
+          {errors.telefone && <span>{errors.telefone.message}</span>}
+          <Controller
+            control={control}
+            name="serviços"
+            render={({ field }) => (
+              <Select title="Serviços" options={serviceOptions} {...field} />
+            )}
+          />
+          {errors.serviços && <span>{errors.serviços.message}</span>}
+          <Controller
+            control={control}
+            name="mensagem"
+            render={({ field }) => <TextArea {...field} />}
+          />
+          {errors.mensagem && <span>{errors.mensagem.message}</span>}
 
-          <Button onClick={() => handleSubmit()}>ENVIAR</Button>
-        </div>
+          <Button type="submit">ENVIAR</Button>
+        </form>
       </div>
       <div className="contact-box">
         <img className="contact-box__image" src={boy} alt="imagem menino" />

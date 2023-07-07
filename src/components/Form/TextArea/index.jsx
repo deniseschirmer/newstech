@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./textArea.css";
 
-const TextArea = ({ title, setState, value }) => {
+const TextArea = ({ title, onChange, value }) => {
   return (
     <div className="text-container">
       <p className="text-title">{title}</p>
@@ -9,7 +9,7 @@ const TextArea = ({ title, setState, value }) => {
         placeholder="Mensagem"
         className="text"
         value={value}
-        onChange={(e) => setState(e.target.value)}
+        onChange={onChange}
       />
     </div>
   );

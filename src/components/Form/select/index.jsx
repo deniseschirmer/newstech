@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./select.css";
 
-const Select = ({ title, value, setState, options }) => {
+const Select = ({ title, value, onChange, options }) => {
   return (
     <div className="select-container">
       <p className="select-title">{title}</p>
@@ -10,10 +10,7 @@ const Select = ({ title, value, setState, options }) => {
         className="select"
         value={value}
         name="teste"
-        onChange={(e) => {
-          console.log(e.target.value);
-          setState(e.target.value);
-        }}
+        onChange={onChange}
       >
         <>
           {options?.map((option, index) => (
