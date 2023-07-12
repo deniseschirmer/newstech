@@ -1,5 +1,6 @@
 import BeatLoader from "react-spinners/BeatLoader";
 import { useState, useEffect } from "react";
+import "./Loading.css"
 
 
 const LoadingPage = () => {
@@ -9,7 +10,7 @@ const LoadingPage = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 10000);
+    }, 35000);
   }, [])
 
   return (
