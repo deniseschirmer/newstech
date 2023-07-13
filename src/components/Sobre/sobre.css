@@ -7,9 +7,7 @@
 
 .sobre-box {
   flex: 1;
-
   margin-top: 87px;
-  /* margin-bottom: 80px; */
 }
 
 .sobre-title {
@@ -34,17 +32,34 @@
 .sobre-box_imagem {
   width: 565px;
   height: 430px;
-
-  /* margin: 144px 105px 770px 68px; */
   flex: 1;
   text-align: center;
-
   margin-top: 144px;
-  /* margin-bottom: 80px; */
 }
 
 .responsive-image {
-  /* max-width: 100%; */
   width: 565px;
   height: 440px;
+}
+
+/* Media queries para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  .sobre-container {
+    padding: 20px 40px;
+    height: 542px;
+  }
+  .sobre-paragrafo {
+    font-size: 14px;
+    line-height: 18px;
+    width: 345px;
+  }
+
+  .sobre-box_imagem {
+    margin-top: 87px;
+  }
+
+  .responsive-image {
+    width: 300px;
+    height: 300px;
+  }
 }
