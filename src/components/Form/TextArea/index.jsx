@@ -4,7 +4,7 @@ import "./textArea.css";
 const TextArea = ({ title, onChange, value }) => {
   return (
     <div className="text-container">
-      <p className="text-title">{title}</p>
+      <label htmlFor={title} className="text-title">{title}</label>
       <textarea
         placeholder="Mensagem"
         className="text"
