@@ -9,7 +9,7 @@ const Select = ({ title, value, onChange, options }) => {
         placeholder="Selecione:"
         className="select"
         value={value}
-        name="teste"
+        name="selecione"
         onChange={onChange}
       >
         <>

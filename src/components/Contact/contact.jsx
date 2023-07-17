@@ -3,12 +3,16 @@ import Select from "../Form/select";
 import TextArea from "../Form/TextArea";
 import Button from "../Form/Button";
 import boy from "../../assets/boy.png";
+import { IoIosWarning } from "react-icons/io";
 import { Controller, useForm, useFormState } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { IoIosWarning } from "react-icons/io";
+import emailjs from '@emailjs/browser';
 
 import "./contact.css";
+
+
+//const emailjsKey = process.env.EMAILJSPUBLIC_KEY
 
 const schema = yup.object().shape({
   nome: yup.string().required("Por favor informe seu nome."),
@@ -24,7 +28,7 @@ const schema = yup.object().shape({
     })
     .min(10, "Telefone deve ter no mínimo 10 dígitos.")
     .max(15, "Telefone deve ter no máximo 15 dígitos."),
-  serviços: yup.string().required("Escolha um serviço para melhor atende-ló."),
+  servicos: yup.string().required("Escolha um serviço para melhor atende-ló."),
   mensagem: yup
     .string()
     .required("Deixe uma mensagem para entendermos seu negócio."),
@@ -32,20 +36,38 @@ const schema = yup.object().shape({
 
 const Contact = () => {
   const defaultValues = {
-    nome: null,
-    email: null,
-    serviços: null,
-    mensagem: null,
+    nome: "",
+    email: "",
+    telefone: "",
+    servicos: "",
+    mensagem: "",
   };
+
   const { handleSubmit, reset, control } = useForm({
     resolver: yupResolver(schema),
     defaultValues: defaultValues,
   });
 
   const { errors } = useFormState({ control });
+  
+  const sendEmail = async (data) => {
+    try {
+      const templateParams = {
+        from_name: data.nome,
+        from_email: data.email,
+        from_phone: data.telefone,
+        from_service: data.servicos,
+        message: data.mensagem,
+      }
 
-  const sendEmail = (data) => {
-    console.log(data);
+    await emailjs.send("service_zsqnvys", "template_lncmccj", templateParams, "xldZY-IEtt-BMpv8M");
+    alert("Dados enviados com sucesso")
+    reset();
+    console.log("Form sent successfully");
+
+    } catch (error) {
+      console.log("error" + error)
+    }
   };
 
   const serviceOptions = [
@@ -71,6 +93,8 @@ const Contact = () => {
     },
   ];
 
+
+
   return (
     <div id="contact" className="contact-container">
       <main className="form-container">
@@ -84,7 +108,7 @@ const Contact = () => {
           <div className="contact-box">
             <img className="contact-box__image" src={boy} alt="imagem menino" />
             <p className="contact-box__text">
-              Conte a sua história. Queremos saber mais sobre a sua ideia e como
+              Conte a sua história. Queremos saber mais sobre a sua idéia e como
               podemos ajudá-lo a alcançar seus objetivos online.
             </p>
           </div>
@@ -118,20 +142,21 @@ const Contact = () => {
             />
             {errors.telefone && (
               <span className="form-validation-msg">
+                <IoIosWarning />
                 {errors.telefone.message}
               </span>
             )}
             <Controller
               control={control}
-              name="serviços"
+              name="servicos"
               render={({ field }) => (
                 <Select title="Serviços" options={serviceOptions} {...field} />
               )}
             />
-            {errors.serviços && (
+            {errors.servicos && (
               <span className="form-validation-msg">
                 <IoIosWarning />
-                {errors.serviços.message}
+                {errors.servicos.message}
               </span>
             )}
             <Controller
