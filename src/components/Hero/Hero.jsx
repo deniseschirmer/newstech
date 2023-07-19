@@ -1,11 +1,9 @@
-import Navbar from "../NavBar/Navbar";
 import "./hero.css";
 import hero from "../../assets/hero.png";
 
 export default function Hero() {
   return (
     <>
-      <Navbar />
       <section className="hero-section">
         <div className="hero-box">
           <h3 className="hero-title"> Olá empreendedor</h3>
