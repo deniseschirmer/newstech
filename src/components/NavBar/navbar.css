@@ -100,6 +100,17 @@ header .nav-btn {
     font-size: 24px;
     line-height: 27.6px;
   }
+
+  .header nav {
+    height: 50%; 
+  }
+
+  
+
+  
+  nav a{
+    justify-content: center;
+  }
 }
 
 /* @keyframes App-logo-spin {
