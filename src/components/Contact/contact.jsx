@@ -11,7 +11,7 @@ import * as yup from "yup";
 
 const schema = yup.object().shape({
   nome: yup.string().required("nome é obrigatório"),
-  email: yup.string().email("Email inválido").required("Email obrigátorio"),
+  email: yup.string().email("Email inválido").required("Email obrigatório"),
   telefone: yup
     .string()
     .matches(/^\d+$/, "Telefone inválido")

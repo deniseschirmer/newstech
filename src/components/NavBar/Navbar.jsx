@@ -1,10 +1,11 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 
 export default function Navbar() {
+  const [show, setShow] = useState(false);
   const navRef = useRef();
 
   useEffect(() => {
@@ -41,7 +42,7 @@ export default function Navbar() {
   };
 
   const showNavbar = () => {
-    navRef.current.classList.toggle("responsive_nav");
+    setShow((prev) => !prev);
   };
 
   return (
@@ -50,7 +51,7 @@ export default function Navbar() {
         <NavLink className="title" to="/" activeClassName="is-active" exact>
           NEWSTECH
         </NavLink>
-        <nav ref={navRef} className="navbar">
+        <nav ref={navRef} className={`navbar ${show && "responsive_nav"}`}>
           <Link to="/#sobre" onClick={() => handleNavigation("sobre")}>
             Sobre
           </Link>
