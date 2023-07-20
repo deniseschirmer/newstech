@@ -13,7 +13,7 @@ const AppRoutes = () => {
         <Route
           path="/"
           element={
-            <Suspense fallback={<div><Loading/></div>}>
+            <Suspense fallback={<Loading/>}>
               <Home />
             </Suspense>
           }
@@ -21,7 +21,7 @@ const AppRoutes = () => {
         <Route
           path="/join"
           element={
-            <Suspense fallback={<div><Loading/></div>}>
+            <Suspense fallback={<Loading/>}>
               <Join />
             </Suspense>
           }
