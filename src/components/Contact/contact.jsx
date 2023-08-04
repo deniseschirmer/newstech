@@ -12,7 +12,6 @@ import emailjs from '@emailjs/browser';
 import "./contact.css";
 
 
-//const emailjsKey = process.env.EMAILJSPUBLIC_KEY
 
 const schema = yup.object().shape({
   nome: yup.string().required("Por favor informe seu nome."),
@@ -60,7 +59,7 @@ const Contact = () => {
         message: data.mensagem,
       }
 
-    await emailjs.send("service_zsqnvys", "template_lncmccj", templateParams, "xldZY-IEtt-BMpv8M");
+    await emailjs.send("service_guueder", "template_wlpkgq1", templateParams, "cWfD1JPT5wBVsbcYY");
     alert("Dados enviados com sucesso")
     reset();
     console.log("Form sent successfully");
