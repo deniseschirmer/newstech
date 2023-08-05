@@ -23,10 +23,12 @@ header {
   text-transform: uppercase;
 }
 
+
 .nav {
   height: fit-content;
   display: flex;
   background-color: transparent;
+
 }
 
 .nav a {
@@ -68,6 +70,7 @@ header {
 @media only screen and (max-width: 1024px) {
 
   header nav {
+
     top: 0;
     left: 0;
     height: 100%;
@@ -76,6 +79,15 @@ header {
     justify-content: center;
     background-color: var(--mainColor);
     transition: 1s;
+    transform: translateY(-100vh);
+  }
+
+  header .responsive_nav {
+    transform: none;
+    display: block;
+  }
+
+  nav .nav-close-btn {
   }
 
 
@@ -98,6 +110,20 @@ header {
     font-size: 24px;
     line-height: auto;
   }
+
+
+  .header nav {
+    height: 50%; 
+  }
+
+  
+
+  
+  nav a{
+    justify-content: center;
+  }
+}
+
 
   ul.collapsed {
     display: none;

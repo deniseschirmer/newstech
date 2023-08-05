@@ -6,7 +6,6 @@ import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const navRef = useRef();
 
   useEffect(() => {
@@ -45,6 +44,8 @@ export default function Navbar() {
   const showNavbar = () => {
     setIsMenuOpen(!isMenuOpen);
     //console.log("clicou")
+    setShow((prev) => !prev);
+
   };
 
   return (
@@ -68,6 +69,7 @@ export default function Navbar() {
             >
               <li>Projetos</li>
             </Link>
+
 
             <Link to="/join">
               <li>Junte-se a nós</li>
