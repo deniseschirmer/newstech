@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import "./navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link, NavLink, useLocation } from "react-router-dom";
-import { animateScroll as scroll } from "react-scroll";
+import { Link, NavLink } from "react-router-dom";
+//import { animateScroll as scroll } from "react-scroll";
 
 export default function Navbar() {
-  const [show, setShow] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navRef = useRef();
 
   useEffect(() => {
@@ -42,36 +42,53 @@ export default function Navbar() {
   };
 
   const showNavbar = () => {
+    setIsMenuOpen(!isMenuOpen);
+    //console.log("clicou")
     setShow((prev) => !prev);
+
   };
 
   return (
     <>
       <header className="header">
         <NavLink className="title" to="/" activeClassName="is-active" exact>
-          NEWSTECH
+          Newstech
         </NavLink>
-        <nav ref={navRef} className={`navbar ${show && "responsive_nav"}`}>
-          <Link to="/#sobre" onClick={() => handleNavigation("sobre")}>
-            Sobre
-          </Link>
-          <Link to="/#projetos" onClick={() => handleNavigation("projetos")}>
-            Projetos
-          </Link>
+        
+        <nav ref={navRef} className="nav">
+          <ul className={"collapsed" + (isMenuOpen ? "is-expanded" : "")}>
+            <Link
+              to="/#sobre"
+              onClick={() => handleNavigation("sobre")}
+            >
+              <li>Sobre</li>
+            </Link>
+            <Link
+              to="/#projetos"
+              onClick={() => handleNavigation("projetos")}
+            >
+              <li>Projetos</li>
+            </Link>
 
-          <Link to="/join">Junte-se a nós</Link>
 
-          <Link to="/#contact" onClick={() => handleNavigation("contact")}>
-            Contato
-          </Link>
+            <Link to="/join">
+              <li>Junte-se a nós</li>
+            </Link>
 
-          <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-            <FaTimes />
+            <Link
+              to="/#contact"
+              onClick={() => handleNavigation("contact")}
+            >
+              <li>Contato</li>
+            </Link>
+          </ul>
+          <button
+            className="menu-btn"
+            onClick={showNavbar}
+          >
+            {isMenuOpen ? <FaTimes /> : <FaBars />}
           </button>
         </nav>
-        <button className="nav-btn" onClick={showNavbar}>
-          <FaBars />
-        </button>
       </header>
     </>
   );

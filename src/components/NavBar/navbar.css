@@ -1,82 +1,82 @@
 header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  height: 80px;
-  padding: 12px 100px 12px 100px;
-  background: linear-gradient(
+  align-content: center;
+  //padding: 1rem;
+  //height: 80px;
+  padding: 16px 100px;
+ background: linear-gradient(
     90deg,
     rgba(52, 17, 83, 1) 0%,
     rgba(1, 12, 51, 1) 100%
   );
   color: var(--textColor);
+
 }
 
 .title {
   font-size: 40px;
   color: var(--textColor);
   font-family: var(--primaryFont);
-  line-height: 45.84px;
   font-weight: 500;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
-.navbar {
+
+.nav {
+  height: fit-content;
+  display: flex;
+  background-color: transparent;
+
+}
+
+.nav a {
+  align-items: center;
+  margin: 1rem;
+  position: relative;
+  text-decoration: none;
   list-style-type: none;
-  margin-left: auto;
-  display: none;
-}
-
-nav a {
   font-family: var(--primaryFont);
   font-size: 20px;
-  /* margin: 0 2rem; */
-  margin-left: 35px;
   color: var(--textColor);
-  text-decoration: none;
-  position: relative;
 }
 
-nav a:hover::after {
+.nav a:hover::after {
+  width: 100%;
+  height: 2px;
   content: "";
   position: absolute;
   left: 0;
   bottom: -12px;
-  width: 100%;
-  height: 2px;
   background-color: var(--yellowColor);
-  /* color: var(--yellowColor); */
 }
 
-header .nav-btn {
-  padding: 5px;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  outline: none;
-  color: var(--textColor);
-  visibility: hidden;
-  opacity: 0;
-  font-size: 1.8rem;
+.menu-btn {
+  display: none;
+}
+
+
+.collapsed {
+  display: flex;
+  flex-direction: row;
+}
+
+.is-expanded {
+  display:none;
+  
 }
 
 @media only screen and (max-width: 1024px) {
-  header .nav-btn {
-    visibility: visible;
-    opacity: 1;
-  }
 
   header nav {
-    position: fixed;
-    top: 10px;
+
+    top: 0;
     left: 0;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    width: 100%;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
     background-color: var(--mainColor);
     transition: 1s;
     transform: translateY(-100vh);
@@ -90,16 +90,27 @@ header .nav-btn {
   nav .nav-close-btn {
   }
 
+
   nav a {
     font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  header {
+    height: auto;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+
+
   .title {
     font-size: 24px;
-    line-height: 27.6px;
+    line-height: auto;
   }
+
 
   .header nav {
     height: 50%; 
@@ -113,11 +124,30 @@ header .nav-btn {
   }
 }
 
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+  ul.collapsed {
+    display: none;
+    position: absolute;
+    cursor: pointer;
   }
-  to {
-    transform: rotate(360deg);
-  } */
-/* } */
+
+  .menu-btn {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    background-color: transparent;
+    font-size: 1.4rem;
+    color: #fff;
+  }
+
+  .collapsed {
+    display: none;
+    
+  }
+
+
+}
+

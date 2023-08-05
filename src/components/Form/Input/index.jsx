@@ -4,7 +4,7 @@ import "./input.css";
 const Input = ({ title, onChange, value }) => {
   return (
     <div className="input-container">
-      <p className="input-title">{title}</p>
+      <label htmlFor={title} className="input-title">{title}</label>
       <input
         className="input"
         placeholder={title}
