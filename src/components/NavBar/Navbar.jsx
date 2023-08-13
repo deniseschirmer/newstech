@@ -45,7 +45,6 @@ export default function Navbar() {
     setIsMenuOpen(!isMenuOpen);
     //console.log("clicou")
     setShow((prev) => !prev);
-
   };
 
   return (
@@ -54,38 +53,25 @@ export default function Navbar() {
         <NavLink className="title" to="/" activeClassName="is-active" exact>
           Newstech
         </NavLink>
-        
+
         <nav ref={navRef} className="nav">
           <ul className={"collapsed" + (isMenuOpen ? "is-expanded" : "")}>
-            <Link
-              to="/#sobre"
-              onClick={() => handleNavigation("sobre")}
-            >
+            <Link to="/#sobre" onClick={() => handleNavigation("sobre")}>
               <li>Sobre</li>
             </Link>
-            <Link
-              to="/#projetos"
-              onClick={() => handleNavigation("projetos")}
-            >
+            <Link to="/#projetos" onClick={() => handleNavigation("projetos")}>
               <li>Projetos</li>
             </Link>
-
 
             <Link to="/join">
               <li>Junte-se a nós</li>
             </Link>
 
-            <Link
-              to="/#contact"
-              onClick={() => handleNavigation("contact")}
-            >
+            <Link to="/#contact" onClick={() => handleNavigation("contact")}>
               <li>Contato</li>
             </Link>
           </ul>
-          <button
-            className="menu-btn"
-            onClick={showNavbar}
-          >
+          <button className="menu-btn" onClick={showNavbar}>
             {isMenuOpen ? <FaTimes /> : <FaBars />}
           </button>
         </nav>
