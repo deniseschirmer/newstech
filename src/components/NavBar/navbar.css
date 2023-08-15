@@ -52,14 +52,10 @@
   display: none;
 }
 
-.collapsed {
+.nav-links {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-.is-expanded {
-  display: none;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -109,5 +105,8 @@
 
   .collapsed {
     display: none;
+  }
+  .is-expanded {
+    display: block;
   }
 }

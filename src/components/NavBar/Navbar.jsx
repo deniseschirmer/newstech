@@ -54,7 +54,11 @@ export default function Navbar() {
         </NavLink>
 
         <nav ref={navRef} className="nav">
-          <ul className={"collapsed" + (isMenuOpen ? "is-expanded" : "")}>
+          <ul
+            className={
+              "nav-links " + (isMenuOpen ? "is-expanded" : "collapsed")
+            }
+          >
             <Link to="/#sobre" onClick={() => handleNavigation("sobre")}>
               <li>Sobre</li>
             </Link>
