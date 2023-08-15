@@ -20,15 +20,17 @@ const Projetos = () => {
                     src={item.image}
                     alt={item.alt}
                   />
-                  <h2 className="projeto-card_title">{item.title}</h2>
-                  <a
-                    className="projeto-card_paragrafo"
-                    href={item.url}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Visite a página
-                  </a>
+                  <div className="projeto-card_info">
+                    <h2 className="projeto-card_title">{item.title}</h2>
+                    <a
+                      className="projeto-card_paragrafo"
+                      href={item.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Visite a página
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

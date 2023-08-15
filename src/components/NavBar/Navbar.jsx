@@ -43,6 +43,7 @@ export default function Navbar() {
   const showNavbar = () => {
     setIsMenuOpen(!isMenuOpen);
     //console.log("clicou")
+    setShow((prev) => !prev);
   };
 
   return (

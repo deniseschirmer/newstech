@@ -1,4 +1,4 @@
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -80,10 +80,10 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
-  header {
+  .header {
     height: auto;
     flex-direction: column;
-    padding: 1rem;
+    padding: 16px 40px;
   }
 
   .title {

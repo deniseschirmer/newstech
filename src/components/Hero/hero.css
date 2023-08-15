@@ -1,5 +1,5 @@
 .hero-section {
-  display: flex;  
+  display: flex;
   padding: 100px;
   background: linear-gradient(
     90deg,
@@ -7,10 +7,10 @@
     rgba(1, 12, 51, 1) 100%
   );
   height: 100%;
+  width: 100%;
 }
 
-.hero-box{
-  
+.hero-box {
 }
 
 .hero-box_image {
@@ -33,7 +33,7 @@
 .hero-main_title {
   font-family: var(--secondFont);
   font-weight: 500;
-  font-size: 65px;
+  font-size: 85px;
   line-height: 90px;
   color: var(--mainColorLight);
 }
@@ -54,29 +54,46 @@
   font-family: var(--thirdFont);
   font-size: 20px;
   font-weight: 400;
-  line-height: 28px; 
+  line-height: 28px;
   margin-top: 24px;
   width: 281px;
   height: 68px;
-  cursor: pointer;  
+  cursor: pointer;
+  border: none;
 }
 
-@media (max-width: 1024px){
-  
+@media (max-width: 1024px) {
+  .hero-section {
+    padding: 37px 40px;
+  }
+  .hero-img {
+    width: 445px;
+    height: 500px;
+  }
+
+  .hero-box_image {
+    margin-top: -56px;
+  }
+  .hero-main_title {
+    font-size: 56px;
+    line-height: 80px;
+  }
+  .hero-sub_title {
+    font-size: 30px;
+  }
+  .hero-btn {
+    width: 250px;
+  }
 }
 
 /* Estilos para tablet */
 @media (max-width: 768px) {
   .hero-section {
-    flex-direction: row;    
-    padding: 0 40px;    
+    flex-direction: row;
+    padding: 37px 40px;
   }
 
-  .hero-box{
-    margin-top: 80px;
-  }
-
-  .hero-box_image{
+  .hero-box_image {
     margin-top: 36px;
   }
 
@@ -99,15 +116,15 @@
     line-height: normal;
   }
 
-  .hero-btn {  
-    display: flex;  
+  .hero-btn {
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     width: 215px;
-    height: 44px;  
-    font-size: 16px;    
-  }  
+    height: 44px;
+    font-size: 16px;
+  }
 
   .hero-img {
     width: 349px;
@@ -115,25 +132,31 @@
   }
 }
 
+@media (max-width: 425px) {
+  .hero-box_image {
+    display: none;
+  }
+}
+
 /* Estilos para celular */
 @media (max-width: 375px) {
-  .hero-section {    
+  .hero-section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
 
-  .hero-box{     
-    margin-top: 0;    
-    text-align: center;  
+  .hero-box {
+    margin-top: 0;
+    text-align: center;
     display: flex;
-    align-items: center;  
-    flex-direction: column;  
-    margin: 56px 0; 
+    align-items: center;
+    flex-direction: column;
+    margin: 56px 0;
   }
 
-  .hero-title{
+  .hero-title {
     display: none;
   }
 
@@ -145,12 +168,12 @@
     font-size: 20px;
   }
 
-  .hero-btn {     
-    font-size: 14px; 
-    padding: 0;  
+  .hero-btn {
+    font-size: 14px;
+    padding: 0;
     width: 161px;
     height: 44px;
-  } 
+  }
 
   .hero-img {
     display: none;
