@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import "./navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
-//import { animateScroll as scroll } from "react-scroll";
+import "./navbar.css";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -55,7 +54,11 @@ export default function Navbar() {
         </NavLink>
 
         <nav ref={navRef} className="nav">
-          <ul className={"collapsed" + (isMenuOpen ? "is-expanded" : "")}>
+          <ul
+            className={
+              "nav-links " + (isMenuOpen ? "is-expanded" : "collapsed")
+            }
+          >
             <Link to="/#sobre" onClick={() => handleNavigation("sobre")}>
               <li>Sobre</li>
             </Link>

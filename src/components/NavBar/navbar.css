@@ -2,8 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
-  padding: 1rem;
-  height: 80px;
   padding: 16px 100px;
   background: linear-gradient(
     90deg,
@@ -26,6 +24,7 @@
   height: fit-content;
   display: flex;
   background-color: transparent;
+  justify-content: end;
 }
 
 .nav a {
@@ -53,43 +52,26 @@
   display: none;
 }
 
-.collapsed {
+.nav-links {
   display: flex;
   flex-direction: row;
-}
-
-.is-expanded {
-  display: none;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 1024px) {
-  .header {
-    padding: 16px 80px;
-  }
-
-  /* .header nav {
+  header nav {
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     background-color: var(--mainColor);
     transition: 1s;
-    transform: translateY(-100vh);
-  } */
-
-  .header .responsive_nav {
-    /* transform: none;
-    display: block; */
-  }
-
-  .nav .nav-close-btn {
   }
 
   .nav a {
     font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 
@@ -98,6 +80,7 @@
     height: auto;
     flex-direction: column;
     padding: 16px 40px;
+    position: relative;
   }
 
   .title {
@@ -105,33 +88,39 @@
     line-height: auto;
   }
 
-  .header nav {
-    height: 50%;
-  }
-
-  .nav a {
+  .nav {
     justify-content: center;
   }
-}
 
-ul.collapsed {
-  display: none;
-  position: absolute;
-  cursor: pointer;
-}
+  .nav-links {
+    position: absolute;
+    background: linear-gradient(
+      90deg,
+      rgba(52, 17, 83, 1) 0%,
+      rgba(1, 12, 51, 1) 100%
+    );
+    top: 60px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
 
-.menu-btn {
-  display: block;
-  position: absolute;
-  cursor: pointer;
-  top: 1rem;
-  right: 1rem;
-  border: none;
-  background-color: transparent;
-  font-size: 1.4rem;
-  color: #fff;
-}
+  .menu-btn {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    background-color: transparent;
+    font-size: 1.4rem;
+    color: #fff;
+  }
 
-.collapsed {
-  display: none;
+  .collapsed {
+    display: none;
+  }
+  .is-expanded {
+    display: block;
+  }
 }
