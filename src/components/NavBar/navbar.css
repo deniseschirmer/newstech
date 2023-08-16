@@ -80,6 +80,7 @@
     height: auto;
     flex-direction: column;
     padding: 16px 40px;
+    position: relative;
   }
 
   .title {
@@ -89,6 +90,19 @@
 
   .nav {
     justify-content: center;
+  }
+
+  .nav-links {
+    position: absolute;
+    background: linear-gradient(
+      90deg,
+      rgba(52, 17, 83, 1) 0%,
+      rgba(1, 12, 51, 1) 100%
+    );
+    top: 60px;
+    left: 0;
+    right: 0;
+    text-align: center;
   }
 
   .menu-btn {
