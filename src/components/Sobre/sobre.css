@@ -84,7 +84,7 @@
   }
 
   .sobre-box_imagem {
-    width: 100%;
+    width: fit-content;
   }
 
   .responsive-image {

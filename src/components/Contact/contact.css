@@ -82,12 +82,12 @@
 }
 
 @media (min-width: 1024px) {
-  /* .contact-container {
-    padding: 0 6.25rem;
-  } */
+  .contact-container {
+    padding: 30px 80px;
+  }
   .form-box {
     flex-direction: row-reverse;
-    gap: 3rem;
+    justify-content: space-between;
   }
   .contact-box__text {
     padding: 2.5rem;
@@ -102,7 +102,7 @@
   }
 }
 
-@media (min-width: 425px) {
+@media (max-width: 425px) {
   .contact-container {
     flex-direction: row;
     margin-top: 2rem;

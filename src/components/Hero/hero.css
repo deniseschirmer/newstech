@@ -64,7 +64,7 @@
 
 @media (max-width: 1024px) {
   .hero-section {
-    padding: 37px 40px;
+    padding: 30px 80px;
   }
   .hero-img {
     width: 445px;
@@ -120,7 +120,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    /* gap: 10px; */
     width: 215px;
     height: 44px;
     font-size: 16px;
@@ -132,14 +132,29 @@
   }
 }
 
-@media (max-width: 425px) {
-  .hero-box_image {
+@media (max-width: 600px) {
+  .hero-img {
     display: none;
   }
 }
 
+@media (max-width: 425px) {
+  .hero-box_image {
+    display: none;
+  }
+  /* .hero-btn_box {
+    align-items: center;
+  }
+  .hero-btn {
+    font-size: 14px;
+    padding: 0;
+    width: 161px;
+    height: 44px;
+  } */
+}
+
 /* Estilos para celular */
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .hero-section {
     display: flex;
     justify-content: center;
