@@ -10,7 +10,9 @@ export default function Hero() {
           <h1 className="hero-main_title">Vamos expandir seu negócio?</h1>
           <h2 className="hero-sub_title">Torne ele online!</h2>
           <div className="hero-btn_box">
-            <button className="hero-btn">COMECE AGORA</button>
+            <button className="hero-btn">
+              <a href="#contact">COMECE AGORA</a>
+            </button>
           </div>
         </div>
         <div className="hero-box_image">
