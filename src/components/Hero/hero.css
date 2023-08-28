@@ -66,27 +66,38 @@
   text-decoration: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .hero-section {
-    padding: 30px 80px;
+    padding: 37px 40px;
+    justify-content: center;
   }
   .hero-img {
-    width: 445px;
-    height: 500px;
+    width: 349px;
+    height: 349px;
   }
 
   .hero-box_image {
-    margin-top: -56px;
+    margin-top: 0px;
+  }
+  .hero-title {
+    font-size: 16px;
   }
   .hero-main_title {
-    font-size: 56px;
-    line-height: 80px;
+    font-size: 40px;
+    line-height: 70px;
   }
   .hero-sub_title {
-    font-size: 30px;
+    font-size: 20px;
   }
   .hero-btn {
-    width: 250px;
+    width: 215px;
+    height: 44px;
+    border-radius: 16px;
+    padding: 10px 35px;
+  }
+  .hero-btn a {
+    font-size: 16px;
+    line-height: 28px;
   }
 }
 
@@ -98,7 +109,7 @@
   }
 
   .hero-box_image {
-    margin-top: 36px;
+    margin-top: 0px;
   }
 
   .hero-title {
@@ -131,8 +142,8 @@
   }
 
   .hero-img {
-    width: 349px;
-    height: 349px;
+    width: 300px;
+    height: 320px;
   }
 }
 

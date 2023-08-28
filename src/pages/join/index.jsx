@@ -27,15 +27,17 @@ const Join = () => {
             profissionais e expandir seus horizontes, junte-se a nós e faça
             parte de uma comunidade vibrante e inspiradora.
           </p>
-          <button className="Join-btn">
-            <a
-              className="join-btn_text"
-              href="https://discord.gg/ErheYyCB"
-              target="_blank"
-            >
-              Comunidade Discord
-            </a>
-          </button>
+          <div className="join-btn__box">
+            <button className="Join-btn">
+              <a
+                className="join-btn_text"
+                href="https://discord.gg/ErheYyCB"
+                target="_blank"
+              >
+                Comunidade Discord
+              </a>
+            </button>
+          </div>
         </div>
         <div className="Join-box_image">
           <img

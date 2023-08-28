@@ -1,16 +1,17 @@
 .Join-container {
   display: flex;
   width: 100%;
-  /* height: 548px; */
-  padding: 35px 100px 86px 100px;
+  height: 100%;
+  padding: 100px 100px 86px 100px;
   justify-content: space-between;
 }
 
 .Join-box {
-  width: 603px;
+  /* width: 603px; */
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: 40px;
 }
 
 .Join-title {
@@ -29,7 +30,6 @@
   font-size: 20px;
   line-height: 28px;
   color: #01030f;
-  /* padding-left: 110px; */
   margin-top: 20px;
   text-align: justify;
 }
@@ -37,9 +37,7 @@
 .Join-responsive-image {
   width: 550.56px;
   height: 515px;
-  /* background: url(CoffeeDoddle(1).png); */
-  /* transform: rotate(0.75deg); */
-  margin-top: -20px;
+  margin-top: 30px;
 }
 
 .Join-btn {
@@ -74,11 +72,75 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .Join-responsive-image {
+    width: 480px;
+    height: 480px;
+    margin-top: 10px;
+  }
+}
+
 @media (max-width: 768px) {
+  .Join-responsive-image {
+    margin-top: 30px;
+  }
+  .Join-container {
+    padding: 37px 40px;
+  }
+  .Join-responsive-image {
+    width: 380px;
+    /* height: 364px; */
+  }
+}
+
+@media (max-width: 425px) {
+  .Join-responsive-image {
+    margin-top: 20px;
+  }
+  .Join-responsive-image {
+    width: 350px;
+    height: 364px;
+  }
+  .Join-box {
+    /* width: 340px; */
+  }
+  .Join-paragraph {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .Join-title {
+    font-size: 36px;
+    line-height: normal;
+  }
+}
+
+@media (max-width: 320px) {
   .Join-responsive-image {
     margin-top: 20px;
   }
   .Join-container {
-    padding: 37px 40px;
+    padding: 35px 27px;
+  }
+  .Join-box {
+    /* width: 280px; */
+  }
+  .Join-responsive-image {
+    width: 280px;
+    height: 317px;
+  }
+  .Join-title {
+    text-align: center;
+  }
+  .join-btn__box {
+    display: flex;
+    justify-content: center;
+  }
+  .Join-btn {
+    width: 229px;
+    height: 49px;
+    border-radius: 8px;
+  }
+  .join-btn_text {
+    font-size: 14px;
   }
 }
