@@ -27,7 +27,7 @@
   margin-right: 14px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
   .footer-container {
     padding: 16px 80px;
   }

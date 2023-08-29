@@ -68,7 +68,7 @@
 
 @media (max-width: 1200px) {
   .hero-section {
-    padding: 37px 40px;
+    padding: 37px 80px;
     justify-content: center;
   }
   .hero-img {
@@ -101,6 +101,11 @@
   }
 }
 
+/* @media (max-width: 1024px) {
+  .hero-section {
+    padding: 37px 80px;
+  }
+} */
 /* Estilos para tablet */
 @media (max-width: 768px) {
   .hero-section {

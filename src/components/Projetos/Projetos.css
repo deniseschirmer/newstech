@@ -93,9 +93,9 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
   .projeto-section {
-    padding: 30px 40px;
+    padding: 30px 80px;
   }
   .projeto-card {
     width: 350px;

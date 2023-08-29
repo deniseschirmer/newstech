@@ -58,19 +58,10 @@
   justify-content: center;
 }
 
-@media only screen and (max-width: 1024px) {
+@media (max-width: 1200px) {
   .header {
-    padding: 30px 40px;
+    padding: 16px 80px;
   }
-  /* .header nav {
-    top: 0;
-    left: 0;
-    width: 100%;
-    align-items: center;
-    justify-content: end;
-    transition: 1s;
-  } */
-
   .nav a {
     font-size: 1.5rem;
   }

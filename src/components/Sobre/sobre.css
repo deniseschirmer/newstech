@@ -60,11 +60,11 @@
   }
 }
 
-@media screen and (max-width: 850px) {
+/* @media screen and (max-width: 850px) {
   .sobre-container {
     padding: 37px 40px;
   }
-}
+} */
 @media screen and (max-width: 768px) {
   .sobre-container {
     padding: 37px 40px;
