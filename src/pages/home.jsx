@@ -1,6 +1,6 @@
 import Hero from "../components/Hero/Hero";
 import Projetos from "../components/Projetos/Projetos";
-import { Sobre } from "../components/Sobre/Sobre";
+import { About } from "../components/About/About";
 import Footer from "../components/Footer/Footer";
 
 import Contact from "../components/Contact/contact";
@@ -11,7 +11,7 @@ const Home = () => {
     <>
       <Navbar />
       <Hero />
-      <Sobre />
+      <About />
       <Projetos />
       <Contact />
       <Footer />

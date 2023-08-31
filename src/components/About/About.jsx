@@ -1,18 +1,18 @@
 import menbox from "../../assets/menbox.png";
-import "./sobre.css";
+import "./about.css";
 
-export const Sobre = () => {
+export const About = () => {
   return (
-    <section id="sobre" className="sobre-container">
-      <div className="sobre-box">
-        <h1 className="sobre-title">Sobre</h1>
-        <p className="sobre-paragrafo">
+    <section id="about" className="about-container">
+      <div className="about-box">
+        <h1 className="about-title">Sobre</h1>
+        <p className="about-text">
           Na Newstech oferecemos serviços especializados de desenvolvimento de
           websites voltados para empreendedores. Sabemos o quão crucial é ter
           uma presença online impactante nos dias de hoje, e estamos aqui para
           ajudar você a alcançar seus objetivos.
         </p>
-        <p className="sobre-paragrafo">
+        <p className="about-text">
           Pensamos fora da caixa, nossa equipe de talentosos desenvolvedores
           está pronta para criar websites sob medida, que reflitam a essência do
           seu negócio e atendam às suas necessidades específicas. Combinamos
@@ -20,12 +20,8 @@ export const Sobre = () => {
           para entregar uma experiência online excepcional para seus clientes.
         </p>
       </div>
-      <div className="sobre-box_imagem">
-        <img
-          className="responsive-image"
-          src={menbox}
-          alt="Homem em uma caixa"
-        />
+      <div className="about-box_imagem">
+        <img className="menbox-img" src={menbox} alt="Homem em uma caixa" />
       </div>
     </section>
   );

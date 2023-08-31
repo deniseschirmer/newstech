@@ -1,5 +1,5 @@
 import "./footer.css";
-import { FaWhatsapp, FaLinkedin, FaEnvelope, FaGithub } from "react-icons/fa";
+import { FaWhatsapp, FaLinkedin, FaDiscord, FaGithub } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 const Footer = () => {
@@ -8,9 +8,15 @@ const Footer = () => {
       <h4 className="footer-logo">Newstech 2023</h4>
 
       <div className="footer-midias">
-        <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
-          <FaEnvelope className="icone" />
-        </Link>
+        <a
+          href="https://discord.gg/Yh8y9nQj"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
+          <FaDiscord className="icone" />
+        </a>
         <a
           href="https://www.linkedin.com/company/newstech1/?viewAsMember=true"
           target="_blank"

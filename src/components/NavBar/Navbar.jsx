@@ -10,8 +10,8 @@ export default function Navbar() {
   useEffect(() => {
     const url = window.location.href;
 
-    if (url.includes("/#sobre")) {
-      const element = document.getElementById("sobre");
+    if (url.includes("/#about")) {
+      const element = document.getElementById("about");
 
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
@@ -59,7 +59,7 @@ export default function Navbar() {
               "nav-links " + (isMenuOpen ? "is-expanded" : "collapsed")
             }
           >
-            <Link to="/#sobre" onClick={() => handleNavigation("sobre")}>
+            <Link to="/#about" onClick={() => handleNavigation("about")}>
               <li>Sobre</li>
             </Link>
             <Link to="/#projetos" onClick={() => handleNavigation("projetos")}>
