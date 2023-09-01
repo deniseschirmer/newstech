@@ -1,6 +1,5 @@
-.projeto-section {
+.project-section {
   width: 100%;
-  /* height: 1190px; */
   padding: 80px 100px 80px 100px;
   background: linear-gradient(
     90deg,
@@ -9,7 +8,7 @@
   );
 }
 
-.projeto-title {
+.project-title {
   margin-bottom: 40px;
   font-family: var(--secondFont);
   font-style: normal;
@@ -19,7 +18,7 @@
   color: #f2f2f2;
 }
 
-.projeto-paragrafo {
+.project-text {
   margin-top: 40px;
   margin-bottom: 91px;
   font-family: var(--thirdFont);
@@ -27,46 +26,41 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  /* width: 600px; */
   color: var(--mainColorLight);
 }
 
-.projeto-container {
+.project-container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 40px;
   align-content: center;
-  /* margin: 40px-10px; */
 }
 
-.projeto-box {
+.project-box {
   box-sizing: border-box;
   height: 100%;
-  /* margin-bottom: 40px; */
 }
 
-.projeto-card {
+.project-card {
   width: 402px;
-  /* height: 288px; */
   background: #f2f2f2;
   border: 1px solid #000000;
   border-radius: 10px;
 }
 
-.projeto-card_imagem {
+.project-card_imagem {
   width: 100%;
-  /* height: 225px; */
   object-fit: cover;
   background: url(.jpg);
   border-radius: 16px 16px 0px 0px;
 }
 
-.projeto-card_info {
+.project-card_info {
   padding: 14px 0;
 }
 
-.projeto-card_title {
+.project-card_title {
   margin-left: 17px;
   font-family: var(--thirdFont);
   font-style: normal;
@@ -76,7 +70,7 @@
   color: #01030f;
 }
 
-.projeto-card_paragrafo {
+.project-card_text {
   margin-left: 18px;
   font-family: var(--thirdFont);
   font-style: normal;
@@ -88,39 +82,36 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .projeto-card {
+  .project-card {
     width: fit-content;
   }
 }
 
 @media only screen and (max-width: 1200px) {
-  .projeto-section {
+  .project-section {
     padding: 30px 80px;
   }
-  .projeto-card {
+  .project-card {
     width: 350px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .projeto-section {
+  .project-section {
     padding: 37px 40px;
   }
 }
 @media only screen and (max-width: 425px) {
-  .projeto-card {
+  .project-card {
     width: 300px;
-    /* height: 274px; */
   }
-  .projeto-card_imagem {
+  .project-card_imagem {
     width: 100%;
-    /* height: 225px; */
   }
 }
 
 @media only screen and (max-width: 320px) {
-  .projeto-card {
+  .project-card {
     width: 260px;
-    /* height: 274px; */
   }
 }

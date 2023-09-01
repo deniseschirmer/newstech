@@ -1,5 +1,5 @@
 import Hero from "../components/Hero/Hero";
-import Projetos from "../components/Projetos/Projetos";
+import Project from "../components/Project/Project";
 import { About } from "../components/About/About";
 import Footer from "../components/Footer/Footer";
 
@@ -12,7 +12,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <About />
-      <Projetos />
+      <Project />
       <Contact />
       <Footer />
     </>

@@ -17,8 +17,8 @@ export default function Navbar() {
         element.scrollIntoView({ behavior: "smooth" });
       }
     }
-    if (url.includes("/#projetos")) {
-      const element = document.getElementById("projetos");
+    if (url.includes("/#project")) {
+      const element = document.getElementById("project");
 
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
@@ -62,7 +62,7 @@ export default function Navbar() {
             <Link to="/#about" onClick={() => handleNavigation("about")}>
               <li>Sobre</li>
             </Link>
-            <Link to="/#projetos" onClick={() => handleNavigation("projetos")}>
+            <Link to="/#project" onClick={() => handleNavigation("project")}>
               <li>Projetos</li>
             </Link>
 

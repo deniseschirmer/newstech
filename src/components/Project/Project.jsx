@@ -1,29 +1,29 @@
 import { projectData } from "../../data/projectData";
-import "./Projetos.css";
+import "./Project.css";
 
 const Projetos = () => {
   return (
-    <section id="projetos" className="projeto-section">
-      <h1 className="projeto-title">Projetos</h1>
-      <p className="projeto-paragrafo">
+    <section id="project" className="project-section">
+      <h1 className="project-title">Projetos</h1>
+      <p className="project-text">
         Descubra como nosso projetos digitais podem ajudá-lo a alcançar seus
         objetivo de negócios online.
       </p>
-      <div className="projeto-container">
+      <div className="project-container">
         {projectData.map((item) => {
           return (
             <div key={item.id}>
-              <div className="projeto-box">
-                <div className="projeto-card">
+              <div className="project-box">
+                <div className="project-card">
                   <img
-                    className="projeto-card_imagem"
+                    className="project-card_imagem"
                     src={item.image}
                     alt={item.alt}
                   />
-                  <div className="projeto-card_info">
-                    <h2 className="projeto-card_title">{item.title}</h2>
+                  <div className="project-card_info">
+                    <h2 className="project-card_title">{item.title}</h2>
                     <a
-                      className="projeto-card_paragrafo"
+                      className="project-card_text"
                       href={item.url}
                       target="_blank"
                       rel="noreferrer"
