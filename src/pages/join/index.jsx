@@ -7,28 +7,28 @@ const Join = () => {
   return (
     <div>
       <Navbar />
-      <section id="join" className="Join-container">
-        <div className="Join-box">
-          <h1 className="Join-title">Junte-se a nós</h1>
-          <p className="Join-paragraph">
+      <section id="join" className="join-container">
+        <div className="join-box">
+          <h1 className="join-title">Junte-se a nós</h1>
+          <p className="join-text">
             Nossa comunidade é formada por desenvolvedores e designers
             apaixonados por tecnologia e inovação. O objetivo é criar um
             ambiente colaborativo onde os membros possam compartilhar
             conhecimentos, trocar ideias e trabalhar juntos em projetos
             desafiadores.
           </p>
-          <p className="Join-paragraph">
+          <p className="join-text">
             Acreditamos que a diversidade é fundamental para a criatividade, por
             isso, nossa comunidade é aberta a todos os tipos de perfis e
             habilidades.
           </p>
-          <p className="Join-paragraph">
+          <p className="join-text">
             Se você é da área de tecnologia e quer conectar com outros
             profissionais e expandir seus horizontes, junte-se a nós e faça
             parte de uma comunidade vibrante e inspiradora.
           </p>
           <div className="join-btn__box">
-            <button className="Join-btn">
+            <button className="join-btn">
               <a
                 className="join-btn_text"
                 href="https://discord.gg/ErheYyCB"
@@ -39,9 +39,9 @@ const Join = () => {
             </button>
           </div>
         </div>
-        <div className="Join-box_image">
+        <div className="join-box_image">
           <img
-            className="Join-responsive-image"
+            className="join-image"
             src={CoffeeDoddle}
             alt="Homem carregando uma xícara de café"
           />
