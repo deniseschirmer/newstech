@@ -16,12 +16,15 @@ const Projetos = () => {
               <div className="project-box">
                 <div className="project-card">
                   <img
-                    className="project-card_imagem"
+                    className="project-card_image"
                     src={item.image}
                     alt={item.alt}
                   />
                   <div className="project-card_info">
                     <h2 className="project-card_title">{item.title}</h2>
+                    <p className="project-card_description">
+                      {item.description}
+                    </p>
                     <a
                       className="project-card_text"
                       href={item.url}
