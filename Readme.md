@@ -89,6 +89,8 @@ $ npm run dev
    <td align="center"><a href="https://github.com/kari-osk"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/71605088?v=4" width="100px;" alt=""/><br /><sub><b>Karina Osuka</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">🚀</a></td>
     <td align="center"><a href="https://github.com/kleck-lucena"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/107014908?v=4" width="100px;" alt=""/><br /><sub><b>Klecstania Lucena</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">🚀</a></td>
    <td align="center"><a href="https://github.com/marconesb"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/91090422?v=4" width="100px;" alt=""/><br /><sub><b>Marcone/b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">🚀</a></td>
-  <td align="center"><a href="https://github.com/fjsgomes"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/84814641?v=4" alt=""/><br /><sub><b>Felipe Gomes</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">🚀</a></td>
+
+    
+  <td align="center"><a href="https://github.com/fjsgomes"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/84814641?v=4" width="100px;" alt=""/><br /><sub><b>Felipe Gomes</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">🚀</a></td>
   </tr>
 </table>
