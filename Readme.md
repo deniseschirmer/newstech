@@ -46,21 +46,25 @@ $ git clone https://github.com/Newstech01/newstech
 
 # Acesse a pasta do projeto no terminal/cmd
 
+### 🎲 Rodando o projeto
+
+```bash
+# Clone este repositório
+$ git clone  https://github.com/deniseschirmer/devComplains-ts
+
+# Acesse a pasta do projeto no terminal/cmd
+
 # Instale as dependências
-
 $ yarn
-
 # ou
-
 $ npm install
 
 # Execute a aplicação em modo de desenvolvimento
-
 $ yarn dev
-
 # ou
-
 $ npm run dev
+
+```
 
 <a href="https://raw.githubusercontent.com/ARTHURPC03/Proffy-FullStack/master/github/linkedin.png">
 <img src="https://raw.githubusercontent.com/ARTHURPC03/Proffy-FullStack/master/github/linkedin.png" alt="LinkedIn" height="50"></a>
