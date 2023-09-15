@@ -7,11 +7,9 @@ import { IoIosWarning } from "react-icons/io";
 import { Controller, useForm, useFormState } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 import "./contact.css";
-
-
 
 const schema = yup.object().shape({
   nome: yup.string().required("Por favor informe seu nome."),
@@ -48,8 +46,9 @@ const Contact = () => {
   });
 
   const { errors } = useFormState({ control });
-  
+
   const sendEmail = async (data) => {
+    const emailjsApiKey = import.meta.env.VITE_APP_EMAILJS_API_KEY;
     try {
       const templateParams = {
         from_name: data.nome,
@@ -57,15 +56,19 @@ const Contact = () => {
         from_phone: data.telefone,
         from_service: data.servicos,
         message: data.mensagem,
-      }
+      };
 
-    await emailjs.send("service_guueder", "template_wlpkgq1", templateParams, "cWfD1JPT5wBVsbcYY");
-    alert("Dados enviados com sucesso")
-    reset();
-    console.log("Form sent successfully");
-
+      await emailjs.send(
+        "service_guueder",
+        "template_wlpkgq1",
+        templateParams,
+        emailjsApiKey
+      );
+      alert("Dados enviados com sucesso");
+      reset();
+      console.log("Form sent successfully");
     } catch (error) {
-      console.log("error" + error)
+      console.log("error" + error);
     }
   };
 
@@ -91,8 +94,6 @@ const Contact = () => {
       selected: false,
     },
   ];
-
-
 
   return (
     <div id="contact" className="contact-container">

@@ -1,4 +1,12 @@
+<p align="center">
+ <img src="https://github.com/Gisellyrock/App-Flutter-CRTECH/assets/104739434/bb9d8071-d2fa-43b4-bb6b-aa353803123f"/>
+</p>
+
 <h1 style="text-align: center; font-weight: bold;">NEWSTECH</h1>
+
+ <h4 align="center"> 
+	Website - Concluído 🚀 🚀 
+</h4>
 
 ## Demo 📸
 
@@ -52,4 +60,36 @@ $ npm run dev
 <img src="https://raw.githubusercontent.com/ARTHURPC03/Proffy-FullStack/master/github/linkedin.png" alt="LinkedIn" height="50"></a>
 <br />
 
-#### Made with love by: NEWSTECH team
+# ✒️ Autores
+
+- [Denise Schirmer](https://github.com/deniseschirmer)
+- [Jackeline Cardoso](https://github.com/JCastro456)
+- [Giselly Rock](https://github.com/gisellyrock)
+- [Karina Osuka](https://github.com/kari-osk)
+- [Kleckstania Lucena](https://github.com/kleck-lucena)
+- [Marcone](https://github.com/marconesb)
+- [Felipe Gomes](https://github.com/fjsgomes)
+
+## 🎁 Expressões de gratidão
+
+- Aos nossos queridos mentores:
+- [Thiago Cardoso](https://github.com/Tlcardoso)
+- [Fábio Lima](https://github.com/Fabinschulz)
+- [Walison Teodoro](https://github.com/Wtheodoro)
+
+---
+
+⌨️ com ❤️ por [Newstech team](https://gist.github.com/Newstech01) 😊
+
+<table>
+  <tr>
+   <td align="center"><a href="https://github.com/deniseschirmer"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/81511894?v=4" width="100px;" alt=""/><br /><sub><b>Denise Schirmer</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">🚀</a></td>
+   <td align="center"><a href="https://github.com/JCastro456"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/101068316?v=4" width="100px;" alt=""/><br /><sub><b>Jackeline Cardoso</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">🌐</a></td>
+  <td align="center"><a href="https://github.com/gisellyrock"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/104739434?v=4" width="100px;" alt=""/><br /><sub><b>Giselly Rock</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">👨‍🚀</a></td> 
+   <td align="center"><a href="https://github.com/kari-osk"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/71605088?v=4" width="100px;" alt=""/><br /><sub><b>Karina Osuka</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">🚀</a></td>
+    <td align="center"><a href="https://github.com/kleck-lucena"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/107014908?v=4" width="100px;" alt=""/><br /><sub><b>Klecstania Lucena</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">🚀</a></td>
+   <td align="center"><a href="https://github.com/marconesb"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/91090422?v=4" width="100px;" alt=""/><br /><sub><b>Marcone/b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">🚀</a></td>
+
+  <td align="center"><a href="https://github.com/fjsgomes"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/84814641?v=4" width="100px;" alt=""/><br /><sub><b>Felipe Gomes</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">🚀</a></td>
+  </tr>
+</table>
